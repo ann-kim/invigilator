@@ -1,0 +1,41 @@
+body {
+	background-color: #d3d3d3;
+}
+
+/* NavBar */
+.navbar, .nav {
+	background-color: #8dc73f;
+}
+
+.jumbotron {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.jumbotron .welcome {
+	font-size: 5em;
+	font-family: Arial Rounded MT Bold, sans-serif;
+}
+
+.quote {
+	font-family: Century Gothic, sans-serif;
+	font-size: 1em;
+	color: #000000;
+}
+
+.jumbotron-author {
+	font-size: .7em;
+}
+
+
+
+
+/* Add */
+.expenseInputs {
+	top-
+}
+
+.grid {
+    width: 500px;
+    height: 250px;
+}

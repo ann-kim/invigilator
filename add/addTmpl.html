@@ -1,0 +1,46 @@
+<!-- Expense Info Inputs -->
+<div class="expenseInputs">
+	<!-- Date Input -->
+	<div class="input-append date form_datetime">
+	    <input size="16" type="text" value="" readonly>
+	    <span class="add-on"><i class="icon-th"></i></span>
+	</div>
+	 
+	<script type="text/javascript">
+	    $(".datetimepicker").datetimepicker({
+	        format: "mm/dd/yyyy"
+	    });
+	</script>            
+
+	<!-- Price Input -->
+	<div class="price">
+		<form>
+			$<input type="text" placeholder="price" />
+		</form>
+	</div>
+
+	<!-- Category Dropdown -->
+	<div class="category">
+		<select>
+			<option value="empty"></option>
+			<option value="addNew">+ new category</option>
+		</select>
+	</div>
+
+	<!-- Comment Input -->
+	<div class="comment">
+		<form>
+			<input type="text" placeholder="comment" />
+		</form>
+	</div>
+
+	<button class="addExpense">add</button>
+</div>
+
+<!-- UI Grid Table of Expenses -->
+<div ng-controller="addCtrl">
+    <div class="grid" ui-grid="{data: myData}" class="grid"></div>
+</div>
+	<!-- Trash can icon for grid view -->
+		<!-- <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> -->
+
