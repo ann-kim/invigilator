@@ -12,9 +12,13 @@ body {
 	vertical-align: middle;
 }
 
-.jumbotron .welcome {
+.jumbotron .greeting {
 	font-size: 5em;
 	font-family: Arial Rounded MT Bold, sans-serif;
+}
+
+.money-word {
+	color: #b9d93a;
 }
 
 .quote {
@@ -31,8 +35,10 @@ body {
 
 
 /* Add */
-.expenseInputs {
-	top-
+/*@import url('//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');*/
+.date-form {
+	width: 15%;
+	margin-left: 20px;
 }
 
 .grid {

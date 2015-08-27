@@ -1,46 +1,48 @@
 <!-- Expense Info Inputs -->
 <div class="expenseInputs">
 	<!-- Date Input -->
-	<div class="input-append date form_datetime">
-	    <input size="16" type="text" value="" readonly>
-	    <span class="add-on"><i class="icon-th"></i></span>
+	<div class="date-form">
+	<div class="form-horizontal">
+	    <div class="control-group">
+	        <label for="date-picker-3" class="control-label"></label>
+	        <div class="controls">
+	            <div class="input-group">
+	                <label for="date-picker-3" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
+	                <input id="date-picker-3" type="text" class="date-picker form-control" />
+	            </div>
+	        </div>
+	    </div>
 	</div>
-	 
-	<script type="text/javascript">
-	    $(".datetimepicker").datetimepicker({
-	        format: "mm/dd/yyyy"
-	    });
-	</script>            
+	</div>
 
-	<!-- Price Input -->
-	<div class="price">
+<!-- Price Input -->
+<!-- 	<div class="price">
 		<form>
 			$<input type="text" placeholder="price" />
 		</form>
 	</div>
-
+ -->
 	<!-- Category Dropdown -->
-	<div class="category">
+<!-- 	<div class="category">
 		<select>
 			<option value="empty"></option>
 			<option value="addNew">+ new category</option>
 		</select>
-	</div>
+	</div> -->
 
 	<!-- Comment Input -->
-	<div class="comment">
+<!-- 	<div class="comment">
 		<form>
 			<input type="text" placeholder="comment" />
 		</form>
 	</div>
 
 	<button class="addExpense">add</button>
-</div>
+</div> -->
 
 <!-- UI Grid Table of Expenses -->
-<div ng-controller="addCtrl">
+<!-- <div ng-controller="addCtrl">
     <div class="grid" ui-grid="{data: myData}" class="grid"></div>
-</div>
+</div> -->
 	<!-- Trash can icon for grid view -->
 		<!-- <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> -->
-
