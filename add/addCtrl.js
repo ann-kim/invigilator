@@ -6,6 +6,8 @@ app.controller('addCtrl', function($scope, service){
         	
  //        }
  //    ];
-
+ 	// Date
     $(".date-picker").datepicker();
+
+    // Price
 });

@@ -1,48 +1,63 @@
-<!-- Expense Info Inputs -->
-<div class="expenseInputs">
-	<!-- Date Input -->
-	<div class="date-form">
-	<div class="form-horizontal">
-	    <div class="control-group">
-	        <label for="date-picker-3" class="control-label"></label>
-	        <div class="controls">
-	            <div class="input-group">
-	                <label for="date-picker-3" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
-	                <input id="date-picker-3" type="text" class="date-picker form-control" />
+<html>
+<head>
+	<title>Expense Inputs</title>
+</head>
+<body>
+	<!-- Expense Info Inputs -->
+	<div class="input-divs">
+		<!-- Date Input -->
+		<div class="expense-input date-form col-xs-2">
+			<div class="form-horizontal">
+		        <div class="controls">
+		            <div class="input-group">
+		                <label for="date-picker-3" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
+		                <input id="date-picker-3" type="text" class="date-picker form-control" placeholder="date" />
+		            </div>
+		        </div>
+			</div>
+		</div>
+
+		<!-- Price Input -->
+        <div class=" expense-input price-input-group col-xs-2">
+        	<div class="controls">
+        		<div class="input-group">
+		        	<label for="price-input-box" class="input-group-addon"><span class="glyphicon glyphicon-usd"></span></label>
+		            <input id="price-input-box" type="number" class="price-input form-control" placeholder="price" />
 	            </div>
 	        </div>
-	    </div>
-	</div>
-	</div>
+        </div>
+		     
 
-<!-- Price Input -->
-<!-- 	<div class="price">
-		<form>
-			$<input type="text" placeholder="price" />
-		</form>
-	</div>
- -->
-	<!-- Category Dropdown -->
-<!-- 	<div class="category">
-		<select>
-			<option value="empty"></option>
-			<option value="addNew">+ new category</option>
-		</select>
-	</div> -->
+		<!-- Category Dropdown -->
+		<div class=" expense-input category-input-group col-xs-3">
+	    	<select class="form-control">
+				<option></option>
+				<option>clothes</option>
+				<option>gas</option>
+				<option>groceries</option>
+				<option>insurance</option>
+			</select>
+        </div>
 
-	<!-- Comment Input -->
-<!-- 	<div class="comment">
-		<form>
-			<input type="text" placeholder="comment" />
-		</form>
-	</div>
 
-	<button class="addExpense">add</button>
-</div> -->
+		<!-- Comment Input -->
+		<div class=" comment-input category-input-group col-xs-4">
+            <input type="text" class="comment-input form-control" placeholder="comment" />
+        </div>
 
-<!-- UI Grid Table of Expenses -->
-<!-- <div ng-controller="addCtrl">
-    <div class="grid" ui-grid="{data: myData}" class="grid"></div>
-</div> -->
-	<!-- Trash can icon for grid view -->
-		<!-- <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> -->
+
+        <!-- Submit Button -->
+		<button class="add-check">
+			<a href="#/add"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+		</button>
+
+	</div> <!-- end of expense inputs div -->
+
+	<!-- UI Grid Table of Expenses -->
+	<!-- <div ng-controller="addCtrl">
+	    <div class="grid" ui-grid="{data: myData}" class="grid"></div>
+	 -->
+		<!-- Trash can icon for grid view (optional) -->
+			<!-- <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> -->
+</body>
+</html>
