@@ -1,16 +1,22 @@
-<div class="login">
-  <form role="form">
-    <div class="form-group">
-      <label for="email">Email address:</label>
-      <input type="email" class="form-control" id="email">
+<div class="jumbotron col-md-6 col-md-offset-3 dash-head">
+    <a href="" ng-click="showReg()">{{status}}</a>
+    <div ng-show="!reg">
+        <h4>login</h4>
+        <form ng-submit="login()">
+            <p ng-show="error" class="text-danger">{{ error }}</p>
+            <input type="email" placeholder="email" class="form-control" ng-model="details.email" required><br>
+            <input type="password" placeholder="password" class="form-control" ng-model="details.password" required><br>
+            <input type="submit" class="btn btn-info" value="sign in" style="text-align: right;">
+        </form>
     </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd">
+    <div ng-show="reg">
+        <h4>register</h4>
+             <p ng-show="error" class="text-danger">{{ error }}</p>
+            <input class="form-control" type="text" placeholder="full name" ng-model="details.name" required /><br />
+            <input class="form-control" type="email" placeholder="email" ng-model="details.email" required /><br />
+            <input class="form-control" type="password" placeholder="password" ng-model="details.password" required /><br />
+            <input type="submit" class="btn btn-info btn-lg" value="register" />
+        </form>
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+</div>       <!-- Step One Of Registration-->
+        <form ng-submit="register()">

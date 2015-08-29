@@ -1,5 +1,8 @@
 var app = angular.module('invigilatorApp', ['ngRoute', 'firebase']);
 
+// Inject above for graph/chart
+// 'nvd3ChartDirectives'
+
 app.config(function($routeProvider){
 	$routeProvider
 		.when('/home', {

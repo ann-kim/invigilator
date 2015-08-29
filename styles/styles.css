@@ -2,6 +2,7 @@ html, body {
 	background-color: #ddd;
 	height: 100%;
 	width: 100%;
+	padding-top: 35px;
 }
 
 /* NavBar */
@@ -12,7 +13,6 @@ html, body {
 .home-screen {
 	height: 100%;
 	width: 96%;
-	margin-bottom: 10px;
 	margin: 0 auto;
 	padding: 15.5%;
 	background-color: #ffffff;
@@ -20,7 +20,7 @@ html, body {
 }
 
 .home-screen .greeting {
-	font-size: 5em;
+	font-size: 5.5em;
 	font-family: Arial Rounded MT Bold, sans-serif;
 }
 
@@ -35,7 +35,7 @@ html, body {
 }
 
 .home-screen-author {
-	font-size: .7em;
+	font-size: .6em;
 }
 
 
@@ -58,7 +58,7 @@ div .expense-input {
 	margin-top: 3px;
 }
 
-.grid {
+/*.grid {
     width: 500px;
     height: 250px;
-}
+}*/
